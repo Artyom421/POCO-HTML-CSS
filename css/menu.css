@@ -1,0 +1,156 @@
+.menu-restourant{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 70px;
+    background-image: url(../image/breadcrumb1.jpg);
+}
+.menu-restourant h2{
+    font-size: 60px;
+    font-weight: 800;
+    color: black;
+}
+.menu-restourant span{
+    color: black;
+    font-size: 18px;
+}
+.menu-restourant span a{
+    color: #999;
+    transition: all 0.4s;
+}
+.menu-restourant span i{
+    color: silver;
+    font-size: 12px;
+    padding: 0 8px;
+}
+.menu-restourant span a:hover{
+    color:var(--yellow);
+}
+
+/***** .EXPLORE START *****/
+
+.explore{
+    display: flex;
+    justify-content: space-between;
+}
+.explore .left{
+    width: 50%;
+    position: relative;
+}
+.explore .left .information{
+    background-color: rgba(8, 3, 3, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.explore .left .information h3{
+    font-size: 50px;
+    font-weight: 800;
+    color: white;
+}
+.explore .left .information span{
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 30px;
+}
+.explore .left .information a{
+    color: black;
+    background-color: var(--yellow);
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.4s;
+}
+.explore .left .information a:hover{
+    color: white;
+}
+.explore .right{
+    width: 50%;
+    background-image: url(../image/bg1-h4.png);
+    background-color: rgba(153, 153, 153, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+.explore .right .parent{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.explore .right .parent .child{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px #999 dashed;
+}
+.explore .right .parent .child .name{
+    color: black;
+    font-size: 24px;
+    font-weight: 700;
+}
+.explore .right .parent .child .value{
+    color: var(--yellow);
+    font-size: 22px;
+    font-weight: 700;
+}.explore .right .parent .recipes{
+    color: #999;
+    font-weight: 500;
+}
+
+/**** DELIVERY START *****/
+.delivery{
+    padding: 50px;
+}
+.delivery>div{
+    padding: 20px;
+}
+
+.delivery .dotted{
+   border: 3px rgba(153, 153, 153, 0.603) dashed;
+   border-radius: 15px;
+   padding: 20px;
+   column-gap: 10px;
+   display: flex;
+   justify-content: space-between;
+   transition: all 0.3s;
+}
+.delivery .dotted:hover{
+    border-color: var(--yellow);
+}
+.delivery .dotted i{
+    font-size: 60px;
+    color: var(--yellow);
+    padding: 15px;
+    transition: all 0.3s;
+}
+.delivery .dotted i:hover{
+    transform: scale(1.2);
+}
+.delivery .dotted h6{
+    color: black;
+    font-size: 21px;
+    font-weight: 700;
+}
+.delivery .dotted span{
+    color: #999;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,1344 @@
+*{
+    box-sizing: border-box;
+    margin: 0!important;
+    padding: 0;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto!important;
+}
+ol, ul{
+    list-style: none;
+}
+a{
+    text-decoration: none!important;
+}
+img{
+    max-width: 100%;
+}
+:root{
+    --yellow:var(#ffc222);
+    --green:var(#00a149);
+}
+
+/**** HEADER START ****/
+
+header{
+    background-color: black;
+    padding: 10px 0;
+}
+header .left span{
+    color: #ffffff;
+}
+header .left span i{
+    padding-right: 10px;
+}
+header .right i{
+    color: #ffffff;
+    margin-left: 15px;
+    transition: all 0.5s;
+}
+header .right i:hover{
+    color: var(--yellow);
+}
+
+/**** HEADER END ****/
+
+/**** NAV START ****/
+nav .container .second-row{
+    display: none;
+}
+nav .container .second-row>div{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+nav .container .second-row .left-2{
+    display: flex;
+    justify-content: flex-start;
+}
+nav .container .second-row .left-2 a{
+    color: black;
+    font-size: 30px;
+}
+nav .container .second-row .center-2{
+    display: flex;
+    justify-content: center;
+}
+nav .container .second-row .center-2 img{
+    width: 150px;
+}
+nav .container .second-row .right-2{
+    display: flex;
+    justify-content: flex-end;
+}
+nav .container .second-row .right-2 a{
+    color: black;
+    font-size: 30px;
+}
+
+nav{
+    z-index: 100;
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+nav .container .left{
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+nav .container .center{
+    display: flex;
+    align-items: center;
+}
+nav .container .center>.ul{
+    width: 100%;
+}
+nav .container .center>.ul>ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+nav .container .center>.ul>ul>li{
+    padding: 10px 0;
+    position: relative;
+}
+nav .container .center>.ul>ul>li>a{
+    color: black;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+nav .container .center>.ul>ul>li:hover>a{
+    color: var(--yellow);
+}
+nav .container .center>.ul>ul>li>a>i{
+    padding-left: 5px;
+    font-size: 14px;
+}
+nav .container .center>.ul>ul>li>ul{
+    background-color: #ffffff;
+    min-width: 150px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px grey;
+    position: absolute;
+    top: 200%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+nav .container .center>.ul>ul>li:hover>ul{
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+nav .container .center>.ul>ul>li>ul>li{
+    padding: 5px ;
+    transition: all 0.4s;
+}
+nav .container .center>.ul>ul>li>ul>li>a{
+    color: black;
+    font-weight: 500;
+    transition: all 0.4s;
+}
+nav .container .center>.ul>ul>li>ul>li:hover{
+    background-color: rgb(245, 231, 231);
+}
+nav .container .center>.ul>ul>li>ul>li:hover>a{
+    color: var(--yellow);
+}
+nav .container .right .right-child{
+    display: flex;
+    justify-content: space-between;
+}
+nav .container .right .first{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .container .right .first img{
+    width: 20%;
+}
+nav .container .right .first .spans{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+}
+nav .container .right .first .spans span:first-child{
+    color: #999;
+    font-size: 15;
+}
+nav .container .right .first .spans span:last-child{
+    color:var(--yellow);
+    font-size: 22px;
+    font-weight: 700;
+}
+nav .container .right .second{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .container .right .second ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    column-gap: 15px;
+}
+nav .container .right .second>ul>li>a{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid rgba(192, 192, 192, 0.63);
+    background-color: white;
+    color: black;
+    transition: all 0.5s;
+}
+nav .container .right .second>ul>li>a:hover{
+    background-color: var(--yellow);
+}
+nav .container .right .second>ul>li{
+    padding: 20px 0;
+    position: relative;
+}
+nav .container .right .second>ul>li .login-form{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    min-width: 300px;
+    top: 200%;
+    right: -20px;
+    box-shadow: silver 0 0 5px;
+    background-color: white;
+    border-top: 5px solid var(--yellow);
+    padding: 10px;
+    transition: all 0.5s;
+}
+nav .container .right .second li:hover .login-form{
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+nav .container .right .second .login-form form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+nav .container .right .second .login-form form .sing-in span{
+    color: black;
+    font-size: 18px;
+}
+nav .container .right .second .login-form form .sing-in a{
+    color: var(--yellow);
+    font-size: 15px;
+    transition: all 0.3s;
+}
+nav .container .right .second .login-form form .sing-in a:hover{
+    text-decoration: underline!important;
+}
+nav .container .right .second .login-form form p{
+    font-size: 15px;
+    color: #999;
+}
+nav .container .right .second .login-form form p span{
+    color: red;
+}
+nav .container .right .second .login-form form input{
+    border: 1px solid #999;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--yellow);
+    font-weight: 500;
+}
+nav .container .right .second .login-form form input[type=password]{
+    color: red;
+}
+nav .container .right .second .login-form form input[type=password]:focus{
+    border: red 1px solid;
+}
+nav .container .right .second .login-form form input:focus{
+    border: 1px solid var(--yellow);
+}
+nav .container .right .second .login-form form button{
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--yellow);
+    font-weight: 600;
+    color: black;
+    font-size: 18px;
+    transition: all 0.4s;
+}
+nav .container .right .second .login-form form button:hover{
+    color: white;
+}
+nav .container .right .second .login-form form>a{
+    color: var(--yellow);
+    font-size: 15px;
+}
+nav .container .right .second .login-form form>a:hover{
+    text-decoration: underline!important;
+}
+nav .container .right .second ul li:nth-child(3)>a{
+    position: relative;
+}
+nav .container .right .second ul li:nth-child(3)>a::after{
+    content: "54";
+    color: black;
+    background-color: var(--yellow);
+    font-size: 10px;
+    padding: 0 4px ;
+    font-weight: 500;
+    border-radius: 8px;
+    position: absolute;
+    top: -2px;
+    left: 55%;
+}
+nav .container .right .second ul li:nth-child(4)>a{
+    position: relative;
+}
+nav .container .right .second ul li:nth-child(4)>a::after{
+    content: "0";
+    color: black;
+    background-color: var(--yellow);
+    font-size: 10px;
+    padding: 0 4px ;
+    font-weight: 500;
+    border-radius: 8px;
+    position: absolute;
+    top: -2px;
+    left: 55%;
+}
+
+/**** SECTION START ****/
+section {
+    background-color: #333;
+    background-image: url(../image/h1_shape-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+section .container{
+    padding: 100px auto;
+}
+
+section .container .text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    z-index: 4;
+}
+section .container .text h1{
+    color: white;
+    font-size: 4.5em;
+    width: 50%;
+    font-weight: 700;
+}
+section .container .text h1 span{
+    color: var(--yellow);
+}
+section .container .text>span {
+    color: var(--green);
+    font-size: 1.8em;
+    font-weight: 700;
+}
+section .container .text>p{
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
+section .container .text>div{
+    display: flex;
+    align-items: center;
+}
+section .container .text>div>a{
+    color: black;
+    padding: 15px 40px;
+    background-color: var(--yellow);
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 8px;
+}
+section .container .text>div>span:nth-of-type(1){
+    color: var(--green);
+    font-size: 3.2em;
+    font-weight: 700;
+}
+section .container .text>div>span:nth-of-type(2){
+    color: silver;
+    font-size: 15px;
+    font-weight: 700;
+    padding-left: 8px;
+}
+section .images{
+    position: relative;
+    height: 460px;
+}
+section img.pizza{
+    position: absolute;
+    top: -50px;
+    right: 0;
+    animation-name: pizza;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: 3;
+}
+@keyframes pizza{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    50%{
+        transform: rotateZ(10deg);
+    }
+    100%{
+        transform: rotateZ(0deg);
+    }
+}
+section img.tomato{
+    position: absolute;
+    top: -180px;
+    right: 50%;
+    animation-name: tomato;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: 2;
+}
+@keyframes tomato{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    50%{
+        transform: rotateZ(15deg);
+    }
+    100%{
+        transform: rotateZ(0deg);
+    }
+}
+section img.shape-7{
+    position: absolute;
+    top: 150px;
+    right: 40%;
+    z-index: 1;
+    transform: rotateZ(-45deg);
+}
+
+/**** ARTICLE ****/
+
+.article-1 .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 40px 0;
+}
+.article-1 .container .foods{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    position: relative;
+}
+.article-1 .container .foods h6{
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+    transition: all 0.5s;
+    z-index: 4;
+    transition: all 0.5s;
+}
+.article-1 .container .foods img{
+    transition: all 0.5s;
+    z-index: 2;
+}
+.article-1 .container .foods:hover img{
+    transform: scale(1.5);
+    z-index: 4;
+}
+.article-1 .container .foods::after{
+    content: "";
+    background-color: var(--yellow);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: all 0.5s;
+    opacity: 0;
+    z-index: 1;
+}
+.article-1 .container .foods:hover::after{
+    transform: scale(20);
+    opacity: 1;
+    z-index: 3;
+}
+.article-2{
+    padding: 100px 0;
+    background-color: #f7f2e2;
+}
+.article-2 .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.article-2 .container>div>div{
+    padding: 5px;
+}
+.article-2 .container .article-clild{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    box-shadow: 0 0 10px grey;
+    border-radius: 5px;
+}
+.article-2 .container .article-clild-1:nth-child(2) .article-clild{
+    background-image: url(../image/green-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.article-2 .container .article-clild .text{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.article-2 .container .article-clild .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 60%;
+}
+.article-2 .container .article-clild .image .image-2{
+    position: absolute;
+    top: 10%;
+    right: 10% ;
+}
+.article-2 .article-clild-1:nth-child(1) .text h5{
+    width: 70%;
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+}.article-2 .article-clild-1:nth-child(1) .text p{
+    width: 80%;
+    color: black;
+    font-size: 12px;
+}
+.article-2 .article-clild-1:nth-child(1) .text span{
+    width: 80%;
+    color: var(--green);
+    font-weight: 700;
+    font-size: 16px;
+}
+.article-2 .article-clild-1:nth-child(2) .text h5{
+    width: 40%;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}.article-2 .article-clild-1:nth-child(2) .text p{
+    width: 70%;
+    color: white;
+    font-size: 12px;
+}
+.article-2 .article-clild-1:nth-child(2) .text span{
+    width: 80%;
+    color: var(--yellow);
+    font-weight: 700;
+    font-size: 16px;
+}
+.article-2 .article-clild-1:nth-child(3) .text h5{
+    width: 100%;
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+}
+.article-2 .article-clild-1:nth-child(3) .text a{
+    color: var(--yellow);
+    font-weight: 700;
+    font-size: 12px;
+    transition: all 0.4s;
+}
+.article-2 .article-clild-1:nth-child(3) .text a:hover{
+    color: black;
+}
+
+/****  MAIN START ****/
+main{
+    padding: 20px 0;
+}
+main .container .h2{
+    background-color: white;
+    padding: 30px 0;
+}
+main .container .h2 h2{
+    color: black;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+main .container .ul-menu {
+    background-color: white;
+    padding: 20px 0;
+}
+main .container .ul-menu ul {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+main .container .ul-menu ul li{
+    background-color: white;
+    border: solid 1px rgba(192, 192, 192, 0.575);
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 25px;
+    transition: all 0.5s;
+}
+main .container .ul-menu ul li:nth-child(1){
+    background-color: var(--yellow);
+}
+main .container .ul-menu ul li a{
+    color: black;
+}
+main .container .ul-menu ul li:hover{
+    border:1px solid var(--yellow);
+}
+main .container .row{
+    margin: 0!important;
+}
+main .container .product{
+    width: 100%;
+    padding: 5px!important;
+}
+main .container .product .product-card{
+    border: solid 1px rgba(192, 192, 192, 0.575);
+    border-radius: 20px;
+    padding: 10px;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+main .container .product .product-card .image{
+    height: 250px;
+    position: relative;
+}
+main .container .product .product-card .image .background{
+    display: block;
+    background-color: #fff9e9;
+    height: 125px;
+    width: 100%;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 0.5s;
+}
+main .container .product .product-card .image img{
+    width: 80%;
+    top: 10%;
+    left: 10%;
+    position: absolute;
+    z-index: 2;
+    transition: all 0.5s;
+}
+main .container .product .product-card:hover .background{
+    background-color: var(--yellow);
+    height: 250px;
+}
+main .container .product .product-card:hover img{
+    transform: scale(1.2);
+}
+main .container .product .product-card .image span{
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    font-size: 10px;
+    font-weight: 600;
+    border-radius: 15px;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+}
+main .container .product .product-card .image a{
+    color: #dddddd;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    z-index: 2;
+    transition: all 0.4s;
+}
+main .container .product .product-card .image a:hover{
+    color: black;
+}
+main .container .product .product-card .info{
+    margin-top: 20px;
+}
+main .container .product .product-card .info>a i{
+    color: #999;
+    transition: all 0.3s;
+}
+main .container .product .product-card .info>a i:hover{
+    color: var(--yellow);
+}
+main .container .product .product-card .info h3{
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 10px;
+}
+main .container .product .product-card .info p{
+    color: #999;
+    font-size: 12px;
+    margin-top: 10px;
+}
+main .container .product .product-card .info .value{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+main .container .product .product-card .info .value .before{
+    color: #999;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: line-through;
+}
+main .container .product .product-card .info .value .after{
+    color: var(--yellow);
+    font-size: 17px;
+    font-weight: 700;
+}
+main .container .product .product-card .info .value i{
+    color: black;
+    background-color: var(--yellow);
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 20px;
+    margin-right: 15px;
+}
+main .container .all-products a{
+    background-color: var(--yellow);
+    color: black;
+    padding: 15px 40px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: all 0.4s;
+}
+main .container .all-products a:hover{
+    color: white;
+}
+
+/**** ARTICLE-3 START ****/
+
+.article-3{
+    background-image: url(../image/h1_img.png),url(../image/download.jpg);
+    background-position:  center center;
+    background-size: cover;
+    margin: 50px 0;
+}
+.article-3 .container{
+    padding-top: 50px;
+}
+.article-3 .container .left{
+    width: 216px;
+    height: 250px;
+    top: 15%;
+    left: 20%;
+    position: relative;
+}
+.article-3 .container .left .first{
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    font-weight: 600;
+}
+.article-3 .container .left .second{
+    position: absolute;
+    top: 40px;
+    font-size: 45px;
+    font-weight: 800;
+    color: var(--yellow);
+    left: 40px;
+}
+.article-3 .container .left .third{
+    position: absolute;
+    top: 70px;
+    left: 40px;
+    font-size: 50px;
+    font-weight: 800;
+}
+.article-3 .container .right{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+.article-3 .container .right .first{
+    color: white;
+    font-size: 40px;
+    width: 200px;
+}
+.article-3 .container .right .second{
+    color: white;
+    font-size: 100px;
+    font-weight: 900;
+    width: 200px;
+    color: var(--yellow);
+}
+.article-3 .container .right a{
+    background-color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: black;
+    font-weight: 700;
+    border-radius: 10px;
+    box-shadow: 0 0 4px grey;
+    transition: all 0.4s;
+}
+.article-3 .container .right a:hover{
+    background-color: var(--yellow);
+    color: white;
+}
+
+/**** TOP-RECIPES START ****/
+
+.top-recipes{
+    padding: 50px 0;
+}
+.top-recipes .container .left-box .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.top-recipes .container .left-box .top h2{
+    color: black;
+    font-size: 35px;
+    font-weight: 700;
+}
+.top-recipes .container .left-box .top a{
+    color: black;
+    transition: all 0.3s;
+}
+.top-recipes .container .left-box .top a i{
+    color: white;
+    background-color: var(--green);
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.top-recipes .container .left-box .top a:hover{
+    color: var(--yellow);
+}
+.top-recipes .container .left-box .column{
+    padding: 20px 15px;
+}
+.top-recipes .container .left-box .col-6 .border-box{
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 20px;
+}
+.top-recipes .container .left-box .column .border-box .background-box{
+    background-color: #fff9e9;
+    padding: 5px;
+    border-radius: 15px;
+}
+.top-recipes .container .left-box .column .border-box .background-box{
+    display: flex;
+}
+.top-recipes .container .left-box .column .border-box .background-box img{
+    width: 35%;
+}
+.top-recipes .container .left-box .column .border-box .background-box .info{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.top-recipes .container .left-box .column .border-box .background-box .info .bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.top-recipes .container .left-box .column .border-box .background-box .info a[href=bbq]{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+.top-recipes .container .left-box .column .border-box .background-box .info a[href=pasta]{
+    color: #999;
+    font-size: 15px;
+    font-weight: 600;
+}
+.top-recipes .container .left-box .column .border-box .background-box .info .before{
+    color: #999;
+    text-decoration: line-through;
+    font-weight: 600;
+}
+.top-recipes .container .left-box .column .border-box .background-box .info .after{
+    color: var(--yellow);
+    font-weight: 600;
+    font-size: 18px;
+}
+.top-recipes .container .left-box .column .border-box .background-box .info i{
+    color: black;
+    background-color: var(--yellow);
+    padding: 15px;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+.top-recipes .container .left-box .column .border-box .background-box .info i:hover{
+    color: white;
+}
+.top-recipes .container .col-4{
+    padding: 0%;
+}
+.top-recipes .container aside{
+    background-image: url(../image/aside-background.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 50px;
+    border-radius: 15px;
+}
+.top-recipes .container aside .first{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.top-recipes .container aside .second{
+    color: red;
+    font-size: 70px;
+    font-weight: 800;
+    line-height: 80px;
+}
+.top-recipes .container aside .third{
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+}
+.top-recipes .container aside .fortd{
+    color: red;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+/**** COMENTS START ****/
+.coments{
+    background-color: #f7f2e2;
+    padding: 80px 0;
+}
+.coments .container .head{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+.coments .container .head h2{
+    color: black;
+    font-size: 50px;
+    font-weight: 800;
+}
+.coments .container .col-4 {
+    padding: 5px;
+}
+.coments .container .client{
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px 15px;
+    display: flex;
+    flex-direction: column;
+}
+.coments .container .client .top-box{
+    display: flex;
+    justify-content: space-between;
+}
+.coments .container .client .top-box .left-box{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.coments .container .client .top-box img{
+    width: 60px;
+    border-radius: 50%;
+    padding-right: 10px;
+}
+.coments .container .client .top-box .left-box div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.coments .container .client .top-box span:nth-of-type(1){
+    font-size: 16px;
+    color: black;
+}
+.coments .container .client .top-box span:nth-of-type(2){
+    font-size: 12px;
+    color: #999;
+}
+.coments .container .client .top-box .right-box i{
+    font-size: 14px;
+    color: var(--yellow);
+}
+.coments .container .client>p{
+    color: #999 ;
+    font-size: 15px;
+    padding-top: 25px;
+}
+.coments .container .client .left-box i{
+    background-color: var(--green);
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 50%;
+    position: absolute;
+    top: 27px;
+    left: 32px;
+}
+
+/**** TREE-BOX START ****/
+
+.tree-box .row>div{
+    height: 500px;
+    margin: 0!important;
+}
+.tree-box .tree-box-child{
+    padding: 0!important;
+}
+.tree-box .left{
+    position: relative;
+    overflow: hidden;
+    background-color: var(--green);
+}
+.tree-box .left img{
+    transform: scale(1.3);
+    position: absolute;
+    top: 100px;
+    right: -240px;
+    z-index: 2;
+}
+.tree-box .center{
+    position: relative;
+    overflow: hidden;
+    background-color: #db731e;
+}
+.tree-box .center img{
+    position: absolute;
+    top: 70px;
+    right: -200px;
+    z-index: 2;
+}
+.tree-box .right{
+    position: relative;
+    overflow: hidden;
+    background-color: var(--yellow);
+}
+.tree-box .right img{
+    transform: scale(1.4);
+    position: absolute;
+    top: 20px;
+    right: -200px;
+    z-index: 2;
+}
+.tree-box .tree-box-child img.image-1{
+    position: absolute;
+    top: -30px;
+    right: 0;
+    transform: scale(0);
+    transition: all 0.7s;
+}
+.tree-box .tree-box-child:hover img.image-1{
+    transform: scale(1);
+}
+.tree-box .tree-box-child .head{
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+    position: absolute;
+    top: 90px;
+    left: 50px;
+    z-index: 3;
+}
+.tree-box .tree-box-child h3{
+    font-size: 80px;
+    color: var(--yellow);
+    font-weight: 800;
+    position: absolute;
+    top: 140px;
+    left: 50px;
+    z-index: 3;
+}
+.tree-box .tree-box-child p{
+    font-size: 18px;
+    width: 180px;
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    top: 250px;
+    left: 50px;
+    z-index: 3;
+}
+.tree-box .tree-box-child .value{
+    font-size: 45px;
+    color: var(--yellow);
+    font-weight: 700;
+    position: absolute;
+    top: 320px;
+    left: 50px;
+    z-index: 3;
+}
+.tree-box .tree-box-child a{
+    font-size: 18px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 15px 40px;
+    font-weight: 600;
+    position: absolute;
+    top: 400px;
+    left: 50px;
+    z-index: 3;
+    transition: all 0.4s;
+}
+.tree-box .tree-box-child a:hover{
+    color: white;
+    background-color: black;
+}
+.tree-box .tree-box-child .h3-3{
+    color: #db731e;
+}
+.tree-box .tree-box-child .value-3{
+    color: black;
+}
+
+/**** LASTEST-NEWS START ****/
+
+.latest-news{
+    padding: 50px 0;
+}
+.latest-news .col-12 h2{
+    color: black;
+    font-size: 35px;
+}
+.latest-news .col-12 a{
+    color: black;
+    transition: all 0.3s;
+}
+.latest-news .col-12 a i{
+    color: white;
+    background-color: var(--green);
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.latest-news .col-12 a:hover{
+    color: var(--yellow);
+}
+.latest-news .col-4{
+    padding: 5px;
+}
+.latest-news .card-list{
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.latest-news .card-list .news{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 20px 10px;
+}
+.latest-news .card-list .news .top-box span{
+    color: #999;
+    font-size: 14px;
+    transition: all 0.4s;
+}
+.latest-news .card-list .news .top-box span a{
+    color: #999;
+    padding: 0 3px ;
+}
+.latest-news .card-list .news .top-box span:nth-child(3) a{
+    color: black;
+}
+.latest-news .card-list .news .top-box span a:hover{
+    color: var(--yellow);
+}
+.latest-news .card-list .news .first{
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.4s;
+}
+.latest-news .card-list .news .first:hover{
+    color: var(--yellow);
+}
+.latest-news .card-list .news p{
+    color: #999;
+    font-size: 14px;
+}
+.latest-news .card-list .news .last{
+    color: black;
+    background-color: var(--yellow);
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    transition: all 0.4s;
+}
+.latest-news .card-list .news .last:hover{
+    color:white;
+}
+.latest-news .card-list .image{
+    overflow: hidden;
+}
+.latest-news .card-list .image img{
+    transition: all 0.6s;
+}
+.latest-news .card-list:hover .image img{
+    transform: scale(1.1);
+}
+
+/**** FOOTER START ****/
+
+footer{
+    background-color: black;
+   
+}
+.footer-1{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 100px;
+}
+.footer-1 .poco{
+    display: flex;
+    justify-content: center;
+    padding: 100px 0 50px 0;
+}
+.footer-1 .poco img{
+    width: 15%;
+    z-index: 1;
+}
+.footer-1::after{
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: rgba(192, 192, 192, 0.3);
+    position: absolute;
+    top: 125px;
+    left: 0;
+}
+.footer-1 .bottom-box{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-1 .bottom-box .bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-1 .bottom-box .bottom h3{
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.footer-1 .bottom-box .bottom span{
+    color: #999;
+    padding-top: 5px;
+}
+.footer-1 .bottom-box .bottom p{
+    color: var(--yellow);
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+.footer-1 .bottom-box .bottom div{
+    margin-top: 15px;
+    display: flex;
+    gap: 0!important;
+}
+.footer-1 .bottom-box .bottom a i{
+    padding: 15px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    font-size: 10px;
+    transition: all 0.5s;
+}
+.footer-1 .bottom-box .bottom a:hover i{
+    background-color: var(--yellow);
+}
+.footer-1 .bottom-box .bottom .input{
+    background-color: black;
+    padding: 10px;
+    border: 1px solid rgba(192, 192, 192, 0.418);
+    border-radius: 5px;
+}
+.footer-1 .bottom-box .bottom .input input{
+    background-color: black;
+    border: none;
+    outline: none;
+    color: silver;
+}
+.footer-1 .bottom-box .bottom .input button{
+    border: none;
+    outline: none;
+    background-color: var(--yellow);
+    padding: 7px 20px;
+    border-radius: 5px;
+    color: black;
+    font-weight: 700;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+.footer-1 .bottom-box .bottom .input button:hover{
+    color: white;
+}
+footer .footer-2{
+    background-color: var(--green);
+    padding: 30px 0;
+}
+footer .footer-2 .container div:nth-child(1){
+    display: flex;
+    justify-content: flex-start;
+}
+footer .footer-2 .container div:nth-child(2){
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+footer .footer-2 span{
+    color: white;
+    font-size: 14px;
+}
+footer .footer-2 span a{
+    color: var(--yellow);
+    font-size: 14px;
+
+}

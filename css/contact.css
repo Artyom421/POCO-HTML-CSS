@@ -1,0 +1,86 @@
+.call-us{
+    padding: 30px 0;
+}
+.call-us .first{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 15px;
+}
+.call-us .first i{
+    font-size: 60px;
+    color: var(--yellow);
+}
+.call-us .first h3{
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+}
+.call-us .first span{
+    font-size: 15px;
+    font-weight: 700;
+    color: #999;
+}
+.map-box .container{
+    border: 1px solid #999;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.map-box iframe{
+    width: 100%;
+    height: 700px;
+}
+
+.map-box form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.map-box form h2{
+    font-size: 35px;
+    font-weight: 700;
+}
+.map-box form p{
+    font-size: 15px;
+    font-weight: 600;
+    color: #999;
+}
+.map-box form input{
+    border: #999 1px solid;
+    outline: none;
+    color: #999;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.map-box form textarea{
+    border: #999 1px solid;
+    outline: none;
+    color: #999;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.map-box form button{
+    padding: 15px 30px;
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    background-color: var(--yellow);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,398 @@
+.wellcome{
+    padding: 100px 0;
+    background-color: white;
+}    
+.wellcome .text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.wellcome .text .first{
+    color: var(--yellow);
+    font-size: 25px;
+    font-weight: 700;
+}
+.wellcome .text h2{
+    color: black;
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 60px;
+}
+.wellcome .text .second{
+    color: #999;
+    font-size: 18px;
+}
+.wellcome .text>div{
+    margin-top: 20px;
+}
+.wellcome .text a{
+    color: black;
+    background-color: var(--yellow);
+    padding: 15px 35px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+.wellcome .text a:hover{
+    color: white;
+}
+.wellcome .images .img-box{
+    padding: 5px;
+}
+.wellcome .images .img-box img{
+    border-radius: 8px;
+    transition: all 0.4s;
+}
+.wellcome .images .img-box img:hover{
+    transform: translateY(-10px);
+}
+
+/***** VIDEO START *****/
+
+.video{
+    background-image: url(../image/bg-video.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 50px 0;
+}
+.video .video-background{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    row-gap: 40px;
+    flex-direction: column;
+    align-items: center;
+    padding: 220px 0;
+}
+.video .video-background .animation{
+    width: 120px;
+    height: 120px;
+    position: relative;
+}
+.video .video-background .animation .animation-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    border: 10px solid rgba(192, 192, 192, 0.3);
+}
+.video .video-background .animation .animation-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: var(--yellow);
+    color: white;
+}
+.video .video-background .animation .animation-3{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 10px rgba(192, 192, 192, 0.3) solid;
+    position: absolute;
+    opacity: 0.3;
+    animation-name: animation;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animation{
+    0%{
+        opacity: 0.6;
+    }
+    10%{
+        opacity: 0.6;
+    }
+    100%{
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+.video .video-background h3{
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+}
+.video .video-background span{
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+}
+.video .video-background a{
+    font-size: 14px;
+    font-weight: 700;
+    color: black;
+    padding: 15px 30px ;
+    background-color: var(--yellow);
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+.video .video-background a:hover{
+    color: white;
+}
+
+/**** ORDER-NOW ****/
+
+.order-now{
+    padding: 50px 0;
+}
+
+.order-now .text span{
+    color: var(--yellow);
+    font-size: 22px;
+    font-weight: 700;
+}
+.order-now .text h2{
+    color: black;
+    font-size: 50px;
+    font-weight: 800;
+}
+.order-now .text p{
+    color: #999;
+    font-size: 15px;
+    font-weight: 600;
+}
+.order-now .text a{
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 15px 30px;
+    background-color: var(--yellow);
+    border-radius: 8px;
+    transition: all 0.4s;
+}
+.order-now .text a:hover{
+    color: white;
+}
+
+/**** CAROUSEL START ****/
+.carousel{
+    background-image: url(../image/bg3-h4.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    margin: 30px 0;
+}
+.carousel-child{
+    width: 300%;
+    height: 100%;
+    display: flex;
+    animation-name: carousel-animation;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.carousel .client{
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.carousel .client img{
+    border-radius: 50%;
+}
+.carousel .client .image{
+    position: relative;
+}
+.carousel .client .image i{
+    position: absolute;
+    top: 80%;
+    right: 10%;
+    font-size: 20px;
+    padding: 15px;
+    background-color: var(--green);
+    color: white;
+    border-radius: 50%;
+}
+.carousel .client .right-box i{
+    color: var(--yellow);
+    font-size: 20px;
+    padding: 10px 3px;
+}
+.carousel .client p{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    width: 60%;
+    text-align: center;
+}
+.carousel .client span{
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+
+@keyframes carousel-animation{
+    0%{
+       transform: translateX(0);
+    }
+    32.9999%{
+        transform: translateX(0);
+    }
+    33%{
+        transform: translateX(-33.3333%);
+    }
+    65.9999%{
+        transform: translateX(-33.3333%);
+    }
+    66%{
+        transform: translateX(-66.666667%);
+    }
+    99.9999%{
+        transform: translateX(-66.666667%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+
+}
+
+/**** CHEF-MANAGER START ****/
+
+.chef-manager .header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+.chef-manager .header span{
+    color: var(--yellow);
+    font-size: 20px;
+    font-weight: 600;
+}
+.chef-manager .header h2{
+    color: black;
+    font-size: 35px;
+    font-weight: 700;
+}
+.chef-manager .chef-card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    border: rgba(153, 153, 153, 0.486) solid 1px;
+}
+.chef-manager .chef-card .images{
+    width: 100%;
+    position: relative;
+}
+.chef-manager .chef-card .images img{
+    width: 100%;
+}
+.chef-manager .chef-card .images span{
+    position: absolute;
+    bottom: -5px;
+    left: 40%;
+    padding: 10px 20px;
+    background-color: var(--yellow);
+    color: black;
+    border-radius: 5px;
+}
+.chef-manager .chef-card .images .black-background{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.5s;
+    background-color: rgba(0, 0, 0, 0.726);
+}
+.chef-manager .chef-card:hover .images .black-background{
+    opacity: 0.6;
+}
+.chef-manager .chef-card .information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    padding: 20px 10px;
+}
+.chef-manager .chef-card .information span{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+.chef-manager .chef-card .information span:hover{
+    color: var(--yellow);
+}
+.chef-manager .chef-card .information p{
+    color: #999;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+.chef-manager .chef-card .information>div{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.chef-manager .chef-card .information i{
+    color: black;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+.chef-manager .chef-card .information i:hover{
+    color: var(--yellow);
+}
+
+/**** DELIVERY START ****/
+
+.delivery{
+    background-image: url(../image/bg3-h3-3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    padding: 100px 0;
+}
+.delivery span{
+    color: var(--yellow);
+    font-size: 25px;
+    font-weight: 600;
+}
+.delivery h2{
+    color: black;
+    font-size: 50px;
+    font-weight: 800;
+}
+.delivery p{
+    width: 43%;
+    text-align: center;
+    color: #999;
+    font-size: 18px;
+}
+.delivery a{
+    color: black;
+    background-color: var(--yellow);
+    padding: 15px 40px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 8px;
+    transition: all 0.4s;
+}
+.delivery a:hover{
+    color: white;
+}
+
+

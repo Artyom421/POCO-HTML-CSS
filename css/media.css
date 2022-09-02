@@ -1,0 +1,39 @@
+@media screen and (max-width:992px){
+
+    nav .container .second-row{
+        display: block;
+    }
+    nav .container .first-row{
+        display: none;
+    }
+    .top-recipes .col-lg-4{
+        display: none;
+    }
+    .order-now .col-12:nth-child(2)>.row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .order-now .col-12 .row{
+        row-gap: 15px;
+    }
+}
+
+@media screen and (max-width:768px){
+    header{
+        display: none!important;
+    }
+    section .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    section .text h1{
+        width: 100%!important;
+        text-align: center;
+    }
+    main .ul-menu ul {
+        flex-wrap: wrap;
+        row-gap: 15px;
+    }
+}
+
